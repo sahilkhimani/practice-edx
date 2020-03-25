@@ -1,0 +1,31 @@
+$color : blue;
+$color1 : red;
+%message {
+    font-style: italic;
+    font-stretch: extra-condensed;
+    color: green;
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+
+button{
+    background-color: $color;
+    color: wheat;
+}
+table{
+    border: 2px solid $color;
+    border-collapse: collapse;
+    th{
+        @extend %message;
+        font-weight: bolder;
+    }
+    td{
+        @extend %message;
+        font-weight: quote($string: "");
+    }
+
+}
+p + h1 {
+    font-weight: 400;
+    color: $color1
+}
