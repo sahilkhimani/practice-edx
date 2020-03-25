@@ -2,3 +2,7 @@ button{
     background-color: blue;
     color: wheat;
 }
+table{
+    border: solid blue;
+    border-collapse: collapse;
+}
